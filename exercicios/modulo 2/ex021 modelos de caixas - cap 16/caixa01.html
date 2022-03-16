@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <style>
+        h1 {
+            /*
+             Para mudar uma caixa box-level para inline-level 
+             display: inline;
+            */
+
+            background-color: lightgray;
+            height: 300px; /* altura */
+            width: 300px; /* largura */
+            border-width: 10px; /* é a espessura da borda */
+            border-style: solid; /* é para escolher o estilo da borda */
+            /*
+             Temos outros tipos de estilos de bordas também:
+             - deshed (pontilhado)
+             - dotted (pontilhadinho)
+             - double (linha dupla)
+             - groove (3D)
+            */
+            border-color: darkslategray;
+
+            border: 10px solid darkslategray; /* Shorthand da borda */
+            /* 
+             Ordem do shorthand da borda
+             
+             border: border-width (espessura da borda), border-style (estilo da borda), border-color (cor);
+
+            */
+
+            padding-top: 10px;
+            padding-right: 10px; 
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*
+             Essa é a ordem correta de adicionar o padding, encima, direita, baixo e esquerda. 
+            */
+
+            padding: 10px 10px 10px 10px; /* Shorthand do padding */
+            /*
+             Ordem do shorthand do padding
+
+             padding: top, right, bottom, left;
+            */
+
+             margin-top: 20px;
+             margin-right: 20px;
+             margin-bottom: 40px;
+             margin-left: 20px;
+
+            /* 
+             Serve para centralizar caixas: 
+             - margin: auto;
+            */
+
+            margin: 20px auto 40px auto; /* Shorthand da margin */
+            /*
+             Ordem do shorthand da margin
+
+             margin: top, right, bottom, left;
+            */
+
+            outline-width: 5px; /* Indica a largura que vai ser */
+            outline-style: dashed; /* Indica o estilo */
+            outline-color: salmon;
+
+            outline: 5px dashed salmon; /* Shorthand do outline */
+            /*
+             Ordem do shorthand do outline
+
+             outline: width (espessura do contorno), style (estilo do contorno), color (cor do contorno);
+            */
+
+        }
+
+        a {
+            /*
+             Para mudar um caixa iline-level para box-level
+             display: block; 
+            */
+            
+            border-width: 10px; /* é a espessura da borda */
+            border-style: double; /* é para escolher o estilo da borda */
+            /*
+             Temos outros tipos de estilos de bordas também:
+             - deshed (pontilhado)
+             - dotted (pontilhadinho)
+             - double (linha dupla)
+             - groove (3D)
+            */
+            border-color: red; /* é a cor da corda */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Páragrafos também são um tipo de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

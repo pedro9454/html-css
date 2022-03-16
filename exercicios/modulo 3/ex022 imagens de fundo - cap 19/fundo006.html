@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; /* Configura o tamanho da imagem de fundo */
+            background-attachment: fixed; /* Vúncula a imagem de fundo */
+            /*
+             No background-attachment temos:
+             - scroll = (padrão) a imagem de fundo vai rolar junto com o conteúdo.
+             - fixed = A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed 
+            /* Ordem da shorthand - background
+             color > image . position > repeat > [size] > attachment 
+            */
+        }
+        
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut hic fuga fugiat accusamus, possimus excepturi omnis dolorum recusandae maiores sequi eius facere amet porro nobis enim magni commodi, suscipit incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui deleniti ipsam quo quasi quos excepturi delectus, nesciunt temporibus vel dicta repellat! Pariatur, saepe voluptatum explicabo delectus tenetur ipsam accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate iure eveniet repellat! Harum pariatur maiores fugit in alias laborum rem saepe corporis quasi amet minima optio distinctio, tenetur fuga assumenda?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut hic fuga fugiat accusamus, possimus excepturi omnis dolorum recusandae maiores sequi eius facere amet porro nobis enim magni commodi, suscipit incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui deleniti ipsam quo quasi quos excepturi delectus, nesciunt temporibus vel dicta repellat! Pariatur, saepe voluptatum explicabo delectus tenetur ipsam accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate iure eveniet repellat! Harum pariatur maiores fugit in alias laborum rem saepe corporis quasi amet minima optio distinctio, tenetur fuga assumenda?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut hic fuga fugiat accusamus, possimus excepturi omnis dolorum recusandae maiores sequi eius facere amet porro nobis enim magni commodi, suscipit incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente qui deleniti ipsam quo quasi quos excepturi delectus, nesciunt temporibus vel dicta repellat! Pariatur, saepe voluptatum explicabo delectus tenetur ipsam accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate iure eveniet repellat! Harum pariatur maiores fugit in alias laborum rem saepe corporis quasi amet minima optio distinctio, tenetur fuga assumenda?</p>
+    </main>
+</body>
+</html>

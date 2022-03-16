@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* 
+        o símbolo de maior indica que só averá alteração no parágrafo que está dentro da div. 
+        */
+        div > p {
+            display: none; /* não mostre nada */
+        }
+
+        /*
+        Quando passar o mouse na div o parágrafo que esta dentro dela (o filho) vai aparecer e mudar a cor do texto e a cor de fundo e a largura.
+        */
+        div:hover > p {
+            display: block; /* é para mostrar o texto */
+            color: white;
+            background-color: red;
+            width: 300px; /* largura */
+        }
+
+        /* 
+        Quando passar o mouse na div vai mudar a cor para vermelho */
+        div:hover { /* Quando eu passar o mouse por cima 
+        */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover </h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESAAAAAA!</p>
+    </div>
+
+    <p>Veja o conteúdo oculto aparecendo!</p>
+</body>
+</html>

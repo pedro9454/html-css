@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /* O container (o que está contendo o conteúdo) tem um posicionamento relativo */
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /* O conteúdo (que fica dentro de um container) tem um posicionamento absoluto */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            /*
+             - Quando o número é positivo move para direita e para baixo
+             - Quando o número é negativo move para esquerda e para cima 
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

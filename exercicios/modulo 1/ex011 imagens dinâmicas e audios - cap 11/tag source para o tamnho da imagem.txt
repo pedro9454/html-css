@@ -1,0 +1,5 @@
+Para imagens: source:midia:type
+<source media="(max-width: 1050px)" srcset="" type="image/">
+
+Para áudios: source:src
+<source src="midia/happy-mistake.mp3" type="audio/mpeg">

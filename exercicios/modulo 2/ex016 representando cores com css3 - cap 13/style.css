@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /* É para colocar a fonte */
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #D1D686, #FAF061); /* É para colocar degrade */
+}
+
+main {
+    background-color:white;
+    border-radius: 10px; /* Arredonda a borda */
+    box-shadow: 5px 5px 5px rgba(152, 156, 98, 0.486); /* Sombra na borda */ 
+    /* O primeiro parametro é o quanto essa sombra vai andar para o lado */ 
+    /* O segundo parametro é o quandto essa sombra vai andar para baixo e */
+    /* O terceiro parametro é o quanto essa sombra vai espalhar */
+    /* Por ultimo você escolhe a cor da sombra e sua transparencia */
+    width: 600px; /* Largura */
+    padding: 10px; /* Acouchoamento */
+    margin: auto; /*É para centralizar */
+}
+
+h1 {
+    color: #f8eb36;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(160, 151, 31, 0.486); /* Sombra no text */
+}
+
+h2 {
+    color: #1B2780; /* Cor das letras */
+}
+
+p {
+    text-align: justify; /* Arruma seu texto */
+}

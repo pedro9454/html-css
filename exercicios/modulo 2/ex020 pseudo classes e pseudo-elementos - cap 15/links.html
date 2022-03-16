@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS (NO CSS)
+            #  = id 
+            .  = class 
+            :  = pseudo-classes 
+            :: = pseudo-elementos 
+            >  = children 
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /* é para tirar o sublinhado */
+            font-weight: bold;
+        }
+
+        /* 
+        o visited é uma pseudo-classe que é ligada com dois pontos 
+        */
+        a:visited { /* link já visitado */
+            color: darkred;
+        }
+
+        a:hover { /* o hover serve só para quado passar o moude por cima sofrer a auteração */
+            color: black;
+            text-decoration: underline; /* é para sublinhar */
+        }
+
+        a:active { /* é a cor dele ativo, quando clicar nele */
+            color: yellow;
+        }
+
+        /* isso é uma class (classe) */
+        .especial:hover {
+            color: white;
+            background-color: rgb(184, 104, 104);
+            text-decoration: none;
+        }
+
+        /* 
+        before é um pseudo-elemento que é ligado com duas vezes dois pontos 
+        */
+        .especial::before { /* antes */
+            content: '☛ ';
+        }
+
+        /* 
+        after é um pseudo-elemento que é ligado com duas vezes dois pontos 
+        */
+        .especial::after { /* depois */
+            content: ' ☚'; /* Conteudo */
+            text-decoration: none; /* é para tirar o sublinhado */
+            font-weight: normal;
+            color: darkgray
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canla do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

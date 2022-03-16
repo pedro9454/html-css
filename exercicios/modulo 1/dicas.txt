@@ -1,0 +1,66 @@
+&lt; = <  
+&gt; = > 
+
+<hr> linha horizontal 
+
+
+Para colocar Emoji é so utilizar &#x e o codigo do Emoji
+
+Para colocar um Favicon: link:favicon
+
+Para colocar em negrio / destaque: <strong>
+
+Para colocar em itálico / ênfase: <em>
+
+Para fazer um marca texto: <mark>
+
+Para colocar um texto pequeno: <small>
+
+Texto excluido: <del>
+
+Texto sublinhado: <ins>
+
+Texto sobrescrito: <sup>
+
+Texto subscrito: <sub> 
+
+
+Cria uma fonte para ler codigos: <code>
+
+serve para um código aparecer do geito que tá no HTML no seu site: <pre>
+
+Para citações simples que ficam na mesma linha: <q>
+
+Para citações complestas mais elaboradas: <blockquote cite=""> com o parametro cite para o navegador entender de onde é essa citação.
+
+Para cignificados: <abbr title="Aqui vai o significado da palavra ou frase">
+
+Texto invertido: bdo:l (left to right) / bdo:r (right to left)
+ <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>
+
+Listas não ordenadas: <ul> 
+
+Listas ordenadas: <ol>
+
+Listas de definições: TÁ NO EXERCÍCIO
+
+
+links externos: <a></a> target="_blank" rel="external"
+
+links internos: <a></a> target="_self" rel="next"
+
+Para voltar uma pasta: ../
+
+Para fazer links para download: <a href="" download=""> type=""</a> com o parametro DOWLOAD e o TYPE para quando o dowload não estiver funcionando.
+
+
+
+Os formatos mais suportados pelos navegadores sobre os vídeos são: mp4 / m4v, webm e ogv VER NO PDF
+
+comentario em css: /**/
+
+estilo css inline: 
+
+estilo css interno:
+
+estilo css externo: 
