@@ -12,21 +12,26 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         -Table
-            Thead
-                tr, td, th
+            
+            Caption (legenda)
+            
+                Thead
+                    tr, td, th
 
-            Tbody
-                tr, td, th
+                Tbody
+                    tr, td, th
 
-            Tfoot
-                tr, td, th
+                Tfoot
+                    tr, td, th
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption> <!-- legenda -->
         <thead> <!-- Cabeça -->
             <tr>
-                <th>Estado</th> <!-- Cabeçalho -->
-                <th>População</th>
+                <!-- scope="col" = é o título da coluna -->
+                <th scope="col">Estado</th> <!-- Cabeçalho -->
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -143,7 +148,8 @@
 
         <tfoot> <!-- Pé -->
             <tr>
-                <th>Total de Habitantes</th> <!-- Cabeçalho -->
+                <!-- scope="row" = título da linha -->
+                <th scope="row">Total de Habitantes</th> <!-- Cabeçalho -->
                 <td class="num"><strong>196.142.732</strong></td>
             </tr>
         </tfoot>
