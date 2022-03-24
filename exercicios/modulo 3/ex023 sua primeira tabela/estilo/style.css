@@ -12,6 +12,7 @@ table {
     width: 500px;
     border-collapse: collapse;
     margin: auto;
+    position: relative; /* cabeçalho fixo */
 }
 
 td, th /* Coloca a configuração nas duas tags */ {
@@ -24,6 +25,12 @@ caption {
     font-weight: bold;
     padding: 10px;
     background-color: lightgray;
+}
+
+thead > tr > th {
+    position: sticky; /* cabeçalho fixo */
+    top: -1px; /* cabeçalho fixo */
+    background-color: rgb(90, 90, 90); /* cabeçalho fixo */
 }
 
 thead, tfoot {
