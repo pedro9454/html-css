@@ -8,13 +8,34 @@
     <style>
         body {
             position: relative;
-            background-image: url('imagens/espaco.jpg');
-            background-size: cover;
+            background-image: url('./imagens/espaco.jpg');
+            background-size: cover; 
+            /* 
+                background-size = ajusta o tamanho da imagem de fundo.
+
+                Por padrão ele vem no auto (automático), mas posso colocar um tamnaho fixo em px ou em porcentagem da tela e tambem com parametros como:
+                
+                - countain = mostra a imagem 100% exibida sem corte nenhum.
+
+                - cover = cobre a tela inteira com a imagem mesmo que pra isso tenha que dar uma picotadinha na imagem.
+            */
             background-repeat: no-repeat;
             background-attachment: fixed;
+            /* 
+                background-attachment = é para deixar a imagem vinculda para quando tiver uma rolagem.
+
+                Por padrão ele vem no scroll que faz o fundo rolar junto com o conteúdo, mas podemos colocar também:
+
+                - fixed = fixa a imgem de fundo para não rolar com o conteúdo.
+            */
             background-position: center center;
             height: 97vh;
 
+            /*
+                shorthand do background:
+                
+                background: color - image - position - repeat - [size] - attachment
+            */
         }
 
         img {
