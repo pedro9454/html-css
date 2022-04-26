@@ -50,3 +50,7 @@ tbody > tr:nth-child(even) { /* even (par) ou 2n */
 .num {
     text-align: right;
 }
+
+#th {
+    width: 50px;
+}
