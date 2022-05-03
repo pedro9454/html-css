@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mídias em HTML5</title>
+    <style>
+        /*
+            Propiedade object-fit:
+
+            - fill (padrão) = Seprecisar destorcer a imagem para mostrar na tela ela vai ser distorcida.
+
+            - contain = Diminui a imagem mantendo a proporção de forma com que a imagem possa aparecer inteira no espaço disponivel, sem distorcer.
+
+            - scale-down (pouco utilizada) =  Similar ao (contain) Mas quado diminui a imagem ela também diminui a qualidade da imagem para caber no espaço disponivel.
+
+            - cover (um dos mais utilizados) = Ajusta o tamanho da imagem, mantem a proporção, mas vai cortar as laterais da imagem, focando no meio dela, para ela preencher to o espaço disponivel.
+
+            - none = Não ajusta o tamanho da imagem, simplesmente corta a imagem para caber no espaço disponivel.
+
+            
+        */
+    </style>
 </head>
 <body>
     <h1>Imagem Dinâmica</h1>
     <p>Tente abrir essa imagem em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
 
     
-    <picture> <!-- indica o navegador que vai aparecer uma imagem -->
+    <picture> <!-- indica o navegador que vai aparecer uma imagem (e vai ser dinamica com source) -->
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="imagem flexível">
